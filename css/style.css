@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: pink;
+    display: flex;
+    justify-content: center;
+}
+h5{
+    color: pink;
+    display: flex;
+    justify-content: center;
+}
+
+p{ 
+color: black;
+display: flex;
+justify-content: center;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+}
+
+img{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#imgYmi {
+    display: block;
+    margin: 0 auto;
+    width: 40rem;
+}
+
+#mainContainer{
+    display: flex;
+}
+
+span{
+    color: pink;
+     font-weight: bold;
+     font-family: cursive;
+}
+
+.navbar-brand{
+    font-family: cursive;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#ymi{
+    color: grey;
+}
+
+a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a:hover{
+    background-color: pink;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ .card{
+    background-color: pink;
+ }
+
+ .nav-link{
+    color: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (prefers-color-scheme:dark) {
+    body{
+         background-color: black;
+    }
+    img{  
+        filter: brightness(0.8);
+    }
+    .navbar-expand-lg{
+        background-color: black;
+    }
+    .nav-link{
+        color: pink;
+    }
+    .navbar-brand{
+        color:white;
+    }
+    .active{
+        color: pink;
+    }
+    a, p{
+        color: white;
+    }
+    .dropdown-menu{
+        background-color: darkgrey;
+    }
+
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+  .card {
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , pink, rgb(249, 110, 133) 43%, rgb(254, 75, 105));
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  

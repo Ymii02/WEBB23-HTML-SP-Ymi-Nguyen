@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Här är en navbar gjord med hjälp av bootstrap -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+      <h1 id="ymi"><span>Ymi</span> Nguyen</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./html/information.html">Om mig </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projekt
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./html/projekt1.html"
+                    >Projekt 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./html/projekt2.html"
+                    >Projekt 2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./html/projekt3.html"
+                    >Projekt 3</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./html/projekt4.html">Projekt 4</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--Här är fyra kort som är responsiva ocskå gjort med bootstrap-->
+    <div class="row row-cols-md-2 ">
+
+    <div class="col card-container">
+        <div class="card col-sm-6 " style="width: 18rem;">
+            <img src="./img/Bianca ingrosso.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bianca Ingrosso</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum exercitationem fuga, natus vel voluptatum repellendus iste excepturi illo iure, ipsa sequi ea, ad odio! Harum, culpa aliquid. Et, mollitia amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nobis repellendus illo </p>
+              <a href="/html/projekt1.html" class="btn btn-light">Klicka här!</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="col card-container">
+        <div class="card col-sm-6 " style="width: 18rem;">
+            <img src="./img/muffins.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fika</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam consequuntur eos natus, repudiandae velit provident ex, porro odit dignissimos amet nulla commodi, beatae repellat id numquam iusto magni aliquam!</p>
+              <a href="./html/projekt4.html" class="btn btn-light">Klicka här!</a>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="col card-container">
+          <div class="card col-sm-6 " style="width: 18rem;">
+        <img src="./img/squid.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Koreansk drama</h5>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ut, neque nam voluptas modi ipsa minus alias quaerat eveniet voluptatum quidem consequatur error obcaecati at, cum esse.</p>
+          <a href="./html/projekt2.html" class="btn btn-light">Klicka här!</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col card-container">
+    <div class="card col-sm-6 " style="width: 18rem;">
+        <img src="./img/bun thit nuong.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vietnamesisk Mat</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nostrum harum perspiciatis iusto vel officia quia, quasi, porro reiciendis corrupti minima illum nihil obcaecati. Voluptate, eaque. Culpa iure et suscipit? orpe rkeo rkek.</p>
+          <a href="./html/projekt3.html" class="btn btn-light">Klicka här!</a>
+        </div>
+      </div>
+    </div>
+<!--En footer som har en länk till min github-->
+    <footer class="container-sm" >
+      <a href="https://github.com/Ymii02">Github</a>
+      <p>Här har ni en länk till min Github</p>
+    </footer>
+
+  </body>
+</html>
